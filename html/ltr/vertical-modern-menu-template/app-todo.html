@@ -35,12 +35,12 @@
 <body class="vertical-layout page-header-light vertical-menu-collapsible vertical-gradient-menu preload-transitions 2-columns  app-page " data-open="click" data-menu="vertical-gradient-menu" data-col="2-columns">
 
     <!-- BEGIN: Header-->
-    <header class="page-topbar" id="header">
+
         <div class="navbar navbar-fixed">
             <nav class="navbar-main navbar-color nav-collapsible sideNav-lock navbar-light">
                 <div class="nav-wrapper">
                     <div class="header-search-wrapper hide-on-med-and-down"><i class="material-icons">search</i>
-                        <input class="header-search-input z-depth-2" type="text" name="Search" placeholder="Recherche" data-search="template-list">
+                        <input class="header-search-input z-depth-2" type="text" name="Search" placeholder="Rechercher" data-search="template-list">
                         <ul class="search-list collection display-none"></ul>
                     </div>
                     <ul class="navbar-list right">
@@ -53,11 +53,9 @@
                     </ul>
                     <!-- translation-button-->
                     <ul class="dropdown-content" id="translation-dropdown">
-                        <li class="dropdown-item"><a class="grey-text text-darken-1" href="#!" data-language="en"><i class="flag-icon flag-icon-gb"></i> English</a></li>
                         <li class="dropdown-item"><a class="grey-text text-darken-1" href="#!" data-language="fr"><i class="flag-icon flag-icon-fr"></i> French</a></li>
-                        <li class="dropdown-item"><a class="grey-text text-darken-1" href="#!" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a></li>
-                        <li class="dropdown-item"><a class="grey-text text-darken-1" href="#!" data-language="de"><i class="flag-icon flag-icon-de"></i> German</a></li>
                     </ul>
+
                     <!-- notifications-dropdown-->
                     <ul class="dropdown-content" id="notifications-dropdown">
                         <li>
@@ -82,12 +80,11 @@
                     </ul>
                     <!-- profile-dropdown-->
                     <ul class="dropdown-content" id="profile-dropdown">
-                        <li><a class="grey-text text-darken-1" href="user-profile-page.html"><i class="material-icons">person_outline</i> Profile</a></li>
-                        <li><a class="grey-text text-darken-1" href="app-chat.html"><i class="material-icons">chat_bubble_outline</i> Chat</a></li>
-                        <li><a class="grey-text text-darken-1" href="page-faq.html"><i class="material-icons">help_outline</i> Help</a></li>
+                        <li><a class="grey-text text-darken-1" href="profil-eleve.html"><i class="material-icons">person_outline</i> Profile Elève | Etudiant</a></li>
+                        <li><a class="grey-text text-darken-1" href="profil-parent.html"><i class="material-icons">person_outline</i> Profile Parent</a></li>
                         <li class="divider"></li>
-                        <li><a class="grey-text text-darken-1" href="user-lock-screen.html"><i class="material-icons">lock_outline</i> Lock</a></li>
-                        <li><a class="grey-text text-darken-1" href="user-login.html"><i class="material-icons">keyboard_tab</i> Logout</a></li>
+                        <li><a class="grey-text text-darken-1" href="profil-prof.html"><i class="material-icons">person_outline</i> Profile Professeur</a></li>
+                        <li><a class="grey-text text-darken-1" href="#"><i class="material-icons">keyboard_tab</i> Déconnexion</a></li>
                     </ul>
                 </div>
                 <nav class="display-none search-sm">
@@ -193,8 +190,7 @@
 
 
     <!-- BEGIN: SideNav-->
-
-        <aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-dark green darken-4 sidenav-gradient sidenav-active-rounded">
+            <aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-dark green darken-4 sidenav-gradient sidenav-active-rounded">
         <div class="brand-sidebar">
             <h1 class="logo-wrapper">
                 <a class="brand-logo darken-1" href="index.html">
@@ -207,19 +203,41 @@
          
             <li class="navigation-header"><a class="navigation-header-text">Applications</a><i class="navigation-header-icon material-icons">more_horiz</i>
             </li>
-            <!-- <li class="bold"><a class="waves-effect waves-cyan " href="app-email.html"><i class="material-icons">mail_outline</i><span class="menu-title" data-i18n="Mail">Mail</span><span class="badge new badge pill pink accent-2 float-right mr-2">5</span></a>
-            </li> -->
-            <li class=" bold"><a class="waves-effect waves-cyan " href="app-chat.html"><i class="material-icons">chat_bubble_outline</i><span class="menu-title" data-i18n="Chat">Forum</span></a>
+
+                        <li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)"><i class="material-icons">book</i><span class="menu-title" >Médiathèque</span></a>
+
+                <div class="collapsible-body">
+                    <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+                        <li><a href="app-chat.html"><i class="material-icons">tchat</i><span data-i18n="Products Page">Forum</span></a>
+                        </li> 
+                        <li><a class="collapsible-header waves-effect waves-cyan" href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Pricing">Livres</span></a>
+
+                            <div class="collapsible-body">
+                                <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+                                    <li><a href="app-file-manager.html"><i class="material-icons">tchat</i><span data-i18n="Products Page">Livres numérique</span></a>
+                                    </li>
+                                    <li><a href="#"><i class="material-icons">radio_button_unchecked</i><span>Livres audios</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
             </li>
-            <li class="bold active"><a class="waves-effect waves-cyan active " href="app-todo.html"><i class="material-icons">voice_chat</i><span class="menu-title" data-i18n="ToDo">Appel video</span></a>
+
             </li>
-            <li class="bold"><a class="waves-effect waves-cyan " href="app-kanban.html"><i class="material-icons">format_list_bulleted</i><span class="menu-title" data-i18n="Kanban">Mon programmme</span></a>
+            <li class="bold active"><a class="waves-effect waves-cyan active " href="app-todo.html"><i class="material-icons">voice_chat</i><span class="menu-title" data-i18n="ToDo">Vidéos</span></a>
             </li>
+
+            <li class="bold"><a class="waves-effect waves-cyan " href="app-kanban.html"><i class="material-icons">school</i><span class="menu-title" data-i18n="Kanban">Cours</span></a>
+            </li>
+
             </li>
             <li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)"><i class="material-icons">developer_mode</i><span class="menu-title" data-i18n="eCommerce">Labo</span></a>
                 <div class="collapsible-body">
                     <ul class="collapsible collapsible-sub" data-collapsible="accordion">
-                        <li><a href="page-knowledge.html"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Products Page">Quiz</span></a>
+                        <li><a href="app-kanban.html"><i class="material-icons">radio_button_unchecked</i><span>Quiz</span></a>
                         </li>
                         <li><a href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Pricing">Test de Niveau</span></a>
                         </li>

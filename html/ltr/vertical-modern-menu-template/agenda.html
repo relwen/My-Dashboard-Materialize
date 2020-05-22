@@ -1,48 +1,55 @@
 <!DOCTYPE html>
-<html class="loading" lang="en" data-textdirection="ltr">
-<!-- BEGIN: Head-->
+<!--
+Template Name: Materialize - Material Design Admin Template
+Author: PixInvent
+Website: http://www.pixinvent.com/
+Contact: hello@pixinvent.com
+Follow: www.twitter.com/pixinvents
+Like: www.facebook.com/pixinvents
+Purchase: https://themeforest.net/item/materialize-material-design-admin-template/11446068?ref=pixinvent
+Renew Support: https://themeforest.net/item/materialize-material-design-admin-template/11446068?ref=pixinvent
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
 
-<head>
+-->
+<html class="loading" lang="en" data-textdirection="ltr">
+  <!-- BEGIN: Head-->
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google.">
     <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template, eCommerce dashboard, analytic dashboard">
     <meta name="author" content="ThemeSelect">
-    <title>Mon programme</title>
+    <title>Calendar | Materialize - Material Design Admin Template</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/favicon/apple-touch-icon-152x152.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/favicon/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- BEGIN: VENDOR CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/jkanban/jkanban.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/quill/quill.snow.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/flag-icon/css/flag-icon.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/fullcalendar/css/fullcalendar.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/fullcalendar/daygrid/daygrid.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/fullcalendar/timegrid/timegrid.min.css">
     <!-- END: VENDOR CSS-->
     <!-- BEGIN: Page Level CSS-->
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/themes/vertical-gradient-menu-template/materialize.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/themes/vertical-gradient-menu-template/style.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/pages/app-kanban.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/themes/vertical-modern-menu-template/materialize.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/themes/vertical-modern-menu-template/style.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/pages/app-calendar.css">
     <!-- END: Page Level CSS-->
-
-
-<!-- Intégration de ZOOM US -->
-    <link type="text/css" rel="stylesheet" href="https://source.zoom.us/1.7.7/css/react-select.css" />
-
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css/custom/custom.css">
     <!-- END: Custom CSS-->
-</head>
-<!-- END: Head-->
-
-<body class="vertical-layout page-header-light vertical-menu-collapsible vertical-gradient-menu preload-transitions 2-columns  app-page menu-collapse" data-open="click" data-menu="vertical-gradient-menu" data-col="2-columns">
+  </head>
+  <!-- END: Head-->
+  <body class="vertical-layout vertical-menu-collapsible page-header-dark vertical-modern-menu preload-transitions 2-columns   " data-open="click" data-menu="vertical-modern-menu" data-col="2-columns">
 
     <!-- BEGIN: Header-->
-    <header class="page-topbar" id="header">
+     <header class="page-topbar" id="header">
         <div class="navbar navbar-fixed">
             <nav class="navbar-main navbar-color nav-collapsible sideNav-lock navbar-light">
                 <div class="nav-wrapper">
                     <div class="header-search-wrapper hide-on-med-and-down"><i class="material-icons">search</i>
-                        <input class="header-search-input z-depth-2" type="text" name="Search" placeholder="Rechercher" data-search="template-list">
+                        <input class="header-search-input z-depth-2" type="text" name="Search" placeholder="Recherche" data-search="template-list">
                         <ul class="search-list collection display-none"></ul>
                     </div>
                     <ul class="navbar-list right">
@@ -195,7 +202,10 @@
 
 
     <!-- BEGIN: SideNav-->
-            <aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-dark green darken-4 sidenav-gradient sidenav-active-rounded">
+
+
+
+    <aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-dark green darken-4 sidenav-gradient sidenav-active-rounded">
         <div class="brand-sidebar">
             <h1 class="logo-wrapper">
                 <a class="brand-logo darken-1" href="index.html">
@@ -215,13 +225,13 @@
                     <ul class="collapsible collapsible-sub" data-collapsible="accordion">
                         <li><a href="app-chat.html"><i class="material-icons">tchat</i><span data-i18n="Products Page">Forum</span></a>
                         </li> 
-                        <li><a class="collapsible-header waves-effect waves-cyan" href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Pricing">Livres</span></a>
+                        <li><a class=" collapsible-header waves-effect waves-cyan" href="#"><i class="material-icons">music_video</i><span data-i18n="Pricing">Livres</span></a>
 
                             <div class="collapsible-body">
                                 <ul class="collapsible collapsible-sub" data-collapsible="accordion">
-                                    <li><a href="app-file-manager.html"><i class="material-icons">tchat</i><span data-i18n="Products Page">Livres numérique</span></a>
+                                    <li><a href="app-file-manager.html"><i class="material-icons">tchat</i><span data-i18n="Products Page">Livres Numériques</span></a>
                                     </li>
-                                    <li><a href="#"><i class="material-icons">radio_button_unchecked</i><span>Livres audios</span></a>
+                                    <li><a href="#"><i class="material-icons">library_music</i><span>Livres audios</span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -232,10 +242,10 @@
             </li>
 
             </li>
-            <li class="bold active"><a class="waves-effect waves-cyan active " href="app-todo.html"><i class="material-icons">voice_chat</i><span class="menu-title" data-i18n="ToDo">Vidéos</span></a>
+            <li class="bold"><a class="waves-effect waves-cyan " href="app-todo.html"><i class="material-icons">voice_chat</i><span class="menu-title" data-i18n="ToDo">Vidéos</span></a>
             </li>
 
-            <li class="bold"><a class="waves-effect waves-cyan " href="app-kanban.html"><i class="material-icons">school</i><span class="menu-title" data-i18n="Kanban">Cours</span></a>
+            <li class="bold"><a class="waves-effect waves-cyan " href="cours.html"><i class="material-icons">school</i><span class="menu-title" data-i18n="Kanban">Cours</span></a>
             </li>
 
             </li>
@@ -244,106 +254,95 @@
                     <ul class="collapsible collapsible-sub" data-collapsible="accordion">
                         <li><a href="app-kanban.html"><i class="material-icons">radio_button_unchecked</i><span>Quiz</span></a>
                         </li>
-                        <li><a href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Pricing">Test de Niveau</span></a>
+                        <li><a href="testNiveau.html"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Pricing">Test de Niveau</span></a>
+                        </li>
+                        <li><a href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Pricing">Quiz child</span></a>
                         </li>
                     </ul>
                 </div>
             </li>
+
+            <li class="bold active"><a class="waves-effect waves-cyan active " href="agenda.html"><i class="material-icons">school</i><span class="menu-title">Agenda</span></a>
+            <li class="bold"><a class="waves-effect waves-cyan " href="finance.html"><i class="material-icons">school</i><span class="menu-title">Finance</span></a>
+            <li class="bold"><a class="waves-effect waves-cyan " href="#"><i class="material-icons">school</i><span class="menu-title">Absence justifié</span></a>
+            </li>
+
+
         </ul>
         <div class="navigation-background"></div><a class="sidenav-trigger btn-sidenav-toggle btn-floating btn-medium waves-effect waves-light hide-on-large-only" href="#" data-target="slide-out"><i class="material-icons">menu</i></a>
     </aside>
+
     <!-- END: SideNav-->
 
     <!-- BEGIN: Page Main-->
     <div id="main">
-
-        <div class="container">
-
-
-
-<div class="row">
-
-
-            <a href="tle.html">
-                <div class="col s12 m3">
-                   <div class="card gradient-shadow gradient-45deg-light-blue-cyan border-radius-3 animate fadeUp">
-                      <div class="card-content center">
-                        <i class="large material-icons white-text">school</i>
-                         <h5 class="white-text lighten-4">Terminale</h5>
-                         <p class="white-text lighten-4">Quiz</p>
-                      </div>
-                   </div>
-                </div>
-            </a>
-
-
-            <a href="#">
-                <div class="col s12 m3">
-                   <div class="card gradient-shadow gradient-45deg-red-pink border-radius-3 animate fadeUp">
-                      <div class="card-content center">
-                        <i class="large material-icons orange-text">perm_identity</i>
-                         <h5 class="white-text lighten-4">Troisième</h5>
-                         <p class="white-text lighten-4">Quiz</p>
-                      </div>
-                   </div>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="col s12 m3">
-                   <div class="card gradient-shadow gradient-45deg-amber-amber border-radius-3 animate fadeUp">
-                      <div class="card-content center">
-                        <i class="large material-icons white-text">sentiment_very_satisfied</i>
-                         <h5 class="white-text lighten-4">CM2</h5>
-                         <p class="white-text lighten-4">Quiz</p>
-                      </div>
-                   </div>
-                </div>
-
-            </a>
-            
-            <a href="#">
-                <div class="col s12 m3">
-                   <div class="card gradient-shadow gradient-45deg-green-teal border-radius-3 animate fadeUp">
-                      <div class="card-content center">
-                        <i class="large material-icons white-text">toys</i>
-                         <h5 class="white-text lighten-4">Autres</h5>
-                         <p class="white-text lighten-4">Quiz</p>
-                      </div>
-                   </div>
-                </div>
-            </a>
-         </div>
-
+      <div class="row">
+        <div class="content-wrapper-before gradient-45deg-indigo-purple"></div>
+        <div class="breadcrumbs-dark pb-0 pt-4" id="breadcrumbs-wrapper">
+          <!-- Search for small screen-->
+          <div class="container">
+            <div class="row">
+              <div class="col s10 m6 l6">
+                <h5 class="breadcrumbs-title mt-0 mb-0"><span>Agenda</span></h5>
+                <ol class="breadcrumbs mb-0">
+                  <li class="breadcrumb-item"><a href="#">Accueil</a>
+                  </li>
+                  <li class="breadcrumb-item active">Agenda
+                  </li>
+                </ol>
+              </div>
+              <div class="col s2 m6 l6"><a class="btn dropdown-settings waves-effect waves-light breadcrumbs-btn right" href="#!" data-target="dropdown1"><i class="material-icons hide-on-med-and-up">settings</i><span class="hide-on-small-onl">Paramètres</span><i class="material-icons right">arrow_drop_down</i></a>
+                
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="col s12">
+          <div class="container">
+            <!-- Full Calendar -->
 
+<div id="app-calendar">
+  <div class="row">
+    <div class="col s12">
+      <div class="card">
+        <div class="card-content">
+          <div id="basic-calendar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- START RIGHT SIDEBAR NAV -->
+
+
+
+          </div>
+          <div class="content-overlay"></div>
+        </div>
+      </div>
     </div>
     <!-- END: Page Main-->
 
-    <!-- BEGIN: Footer-->
 
 
     <!-- END: Footer-->
-
     <!-- BEGIN VENDOR JS-->
     <script src="../../../app-assets/js/vendors.min.js"></script>
     <!-- BEGIN VENDOR JS-->
     <!-- BEGIN PAGE VENDOR JS-->
-    <script src="../../../app-assets/vendors/jkanban/jkanban.min.js"></script>
-    <script src="../../../app-assets/vendors/quill/quill.min.js"></script>
+    <script src="../../../app-assets/vendors/fullcalendar/lib/moment.min.js"></script>
+    <script src="../../../app-assets/vendors/fullcalendar/js/fullcalendar.min.js"></script>
+    <script src="../../../app-assets/vendors/fullcalendar/daygrid/daygrid.min.js"></script>
+    <script src="../../../app-assets/vendors/fullcalendar/timegrid/timegrid.min.js"></script>
+    <script src="../../../app-assets/vendors/fullcalendar/interaction/interaction.min.js"></script>
     <!-- END PAGE VENDOR JS-->
     <!-- BEGIN THEME  JS-->
     <script src="../../../app-assets/js/plugins.js"></script>
     <script src="../../../app-assets/js/search.js"></script>
     <script src="../../../app-assets/js/custom/custom-script.js"></script>
+    <script src="../../../app-assets/js/scripts/customizer.js"></script>
     <!-- END THEME  JS-->
     <!-- BEGIN PAGE LEVEL JS-->
-    <script src="../../../app-assets/js/scripts/app-kanban.js"></script>
+    <script src="../../../app-assets/js/scripts/app-calendar.js"></script>
     <!-- END PAGE LEVEL JS-->
-
-<!-- ZOOM US -->
-    <script src="https://source.zoom.us/zoom-meeting-1.7.7.min.js"></script>
-    <script src="../../../app-assets/js/index-zoom.js"></script>
-</body>
-
+  </body>
 </html>

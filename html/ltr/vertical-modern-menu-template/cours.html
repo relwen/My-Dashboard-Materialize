@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google.">
+    <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template, eCommerce dashboard, analytic dashboard">
+    <meta name="author" content="ThemeSelect">
+    <title>Mon programme</title>
+    <link rel="apple-touch-icon" href="../../../app-assets/images/favicon/apple-touch-icon-152x152.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/favicon/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- BEGIN: VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/jkanban/jkanban.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/quill/quill.snow.css">
+    <!-- END: VENDOR CSS-->
+    <!-- BEGIN: Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/themes/vertical-gradient-menu-template/materialize.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/themes/vertical-gradient-menu-template/style.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/pages/app-kanban.css">
+    <!-- END: Page Level CSS-->
+
+
+<!-- Intégration de ZOOM US -->
+    <link type="text/css" rel="stylesheet" href="https://source.zoom.us/1.7.7/css/react-select.css" />
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/custom/custom.css">
+    <!-- END: Custom CSS-->
+</head>
+<!-- END: Head-->
+
+<body class="vertical-layout page-header-light vertical-menu-collapsible vertical-gradient-menu preload-transitions 2-columns  app-page menu-collapse" data-open="click" data-menu="vertical-gradient-menu" data-col="2-columns">
+
+    <!-- BEGIN: Header-->
+            <aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-dark green darken-4 sidenav-gradient sidenav-active-rounded">
+        <div class="brand-sidebar">
+            <h1 class="logo-wrapper">
+                <a class="brand-logo darken-1" href="index.html">
+            
+            <span class="logo-text hide-on-med-and-down">Opréau</span></a>
+
+                <a class="navbar-toggler" href="#"><i class="material-icons">radio_button_checked</i></a></h1>
+        </div>
+        <ul class="sidenav sidenav-collapsible leftside-navigation collapsible sidenav-fixed menu-shadow" id="slide-out" data-menu="menu-navigation" data-collapsible="menu-accordion">
+         
+            <li class="navigation-header"><a class="navigation-header-text">Applications</a><i class="navigation-header-icon material-icons">more_horiz</i>
+            </li>
+
+                        <li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)"><i class="material-icons">book</i><span class="menu-title" >Médiathèque</span></a>
+
+                <div class="collapsible-body">
+                    <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+                        <li><a href="app-chat.html"><i class="material-icons">tchat</i><span data-i18n="Products Page">Forum</span></a>
+                        </li> 
+                        <li><a class="collapsible-header waves-effect waves-cyan" href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Pricing">Livres</span></a>
+
+                            <div class="collapsible-body">
+                                <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+                                    <li><a href="app-file-manager.html"><i class="material-icons">tchat</i><span data-i18n="Products Page">Livres numérique</span></a>
+                                    </li>
+                                    <li><a href="#"><i class="material-icons">radio_button_unchecked</i><span>Livres audios</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            </li>
+            <li class="bold active"><a class="waves-effect waves-cyan active " href="app-todo.html"><i class="material-icons">voice_chat</i><span class="menu-title" data-i18n="ToDo">Vidéos</span></a>
+            </li>
+
+            <li class="bold"><a class="waves-effect waves-cyan " href="app-kanban.html"><i class="material-icons">school</i><span class="menu-title" data-i18n="Kanban">Cours</span></a>
+            </li>
+
+            </li>
+            <li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)"><i class="material-icons">developer_mode</i><span class="menu-title" data-i18n="eCommerce">Labo</span></a>
+                <div class="collapsible-body">
+                    <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+                        <li><a href="app-kanban.html"><i class="material-icons">radio_button_unchecked</i><span>Quiz</span></a>
+                        </li>
+                        <li><a href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Pricing">Test de Niveau</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <div class="navigation-background"></div><a class="sidenav-trigger btn-sidenav-toggle btn-floating btn-medium waves-effect waves-light hide-on-large-only" href="#" data-target="slide-out"><i class="material-icons">menu</i></a>
+    </aside>
+
+
+    <!-- END: Header-->
+    <ul class="display-none" id="default-search-main">
+      <li class="auto-suggestion-title"><a class="collection-item" href="#">
+          <h6 class="search-title">FILES</h6></a></li>
+      <li class="auto-suggestion"><a class="collection-item" href="#">
+          <div class="display-flex">
+            <div class="display-flex align-item-center flex-grow-1">
+              <div class="avatar"><img src="../../../app-assets/images/icon/pdf-image.png" width="24" height="30" alt="sample image"></div>
+              <div class="member-info display-flex flex-column"><span class="black-text">Two new item submitted</span><small class="grey-text">Marketing Manager</small></div>
+            </div>
+            <div class="status"><small class="grey-text">17kb</small></div>
+          </div></a></li>
+      <li class="auto-suggestion"><a class="collection-item" href="#">
+          <div class="display-flex">
+            <div class="display-flex align-item-center flex-grow-1">
+              <div class="avatar"><img src="../../../app-assets/images/icon/doc-image.png" width="24" height="30" alt="sample image"></div>
+              <div class="member-info display-flex flex-column"><span class="black-text">52 Doc file Generator</span><small class="grey-text">FontEnd Developer</small></div>
+            </div>
+            <div class="status"><small class="grey-text">550kb</small></div>
+          </div></a></li>
+      <li class="auto-suggestion"><a class="collection-item" href="#">
+          <div class="display-flex">
+            <div class="display-flex align-item-center flex-grow-1">
+              <div class="avatar"><img src="../../../app-assets/images/icon/xls-image.png" width="24" height="30" alt="sample image"></div>
+              <div class="member-info display-flex flex-column"><span class="black-text">25 Xls File Uploaded</span><small class="grey-text">Digital Marketing Manager</small></div>
+            </div>
+            <div class="status"><small class="grey-text">20kb</small></div>
+          </div></a></li>
+      <li class="auto-suggestion"><a class="collection-item" href="#">
+          <div class="display-flex">
+            <div class="display-flex align-item-center flex-grow-1">
+              <div class="avatar"><img src="../../../app-assets/images/icon/jpg-image.png" width="24" height="30" alt="sample image"></div>
+              <div class="member-info display-flex flex-column"><span class="black-text">Anna Strong</span><small class="grey-text">Web Designer</small></div>
+            </div>
+            <div class="status"><small class="grey-text">37kb</small></div>
+          </div></a></li>
+      <li class="auto-suggestion-title"><a class="collection-item" href="#">
+          <h6 class="search-title">MEMBERS</h6></a></li>
+      <li class="auto-suggestion"><a class="collection-item" href="#">
+          <div class="display-flex">
+            <div class="display-flex align-item-center flex-grow-1">
+              <div class="avatar"><img class="circle" src="../../../app-assets/images/avatar/avatar-7.png" width="30" alt="sample image"></div>
+              <div class="member-info display-flex flex-column"><span class="black-text">John Doe</span><small class="grey-text">UI designer</small></div>
+            </div>
+          </div></a></li>
+      <li class="auto-suggestion"><a class="collection-item" href="#">
+          <div class="display-flex">
+            <div class="display-flex align-item-center flex-grow-1">
+              <div class="avatar"><img class="circle" src="../../../app-assets/images/avatar/avatar-8.png" width="30" alt="sample image"></div>
+              <div class="member-info display-flex flex-column"><span class="black-text">Michal Clark</span><small class="grey-text">FontEnd Developer</small></div>
+            </div>
+          </div></a></li>
+      <li class="auto-suggestion"><a class="collection-item" href="#">
+          <div class="display-flex">
+            <div class="display-flex align-item-center flex-grow-1">
+              <div class="avatar"><img class="circle" src="../../../app-assets/images/avatar/avatar-10.png" width="30" alt="sample image"></div>
+              <div class="member-info display-flex flex-column"><span class="black-text">Milena Gibson</span><small class="grey-text">Digital Marketing</small></div>
+            </div>
+          </div></a></li>
+      <li class="auto-suggestion"><a class="collection-item" href="#">
+          <div class="display-flex">
+            <div class="display-flex align-item-center flex-grow-1">
+              <div class="avatar"><img class="circle" src="../../../app-assets/images/avatar/avatar-12.png" width="30" alt="sample image"></div>
+              <div class="member-info display-flex flex-column"><span class="black-text">Anna Strong</span><small class="grey-text">Web Designer</small></div>
+            </div>
+          </div></a></li>
+    </ul>
+    <ul class="display-none" id="page-search-title">
+      <li class="auto-suggestion-title"><a class="collection-item" href="#">
+          <h6 class="search-title">PAGES</h6></a></li>
+    </ul>
+    <ul class="display-none" id="search-not-found">
+      <li class="auto-suggestion"><a class="collection-item display-flex align-items-center" href="#"><span class="material-icons">error_outline</span><span class="member-info">No results found.</span></a></li>
+    </ul>
+
+
+
+    <aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-dark green darken-4 sidenav-gradient sidenav-active-rounded">
+        <div class="brand-sidebar">
+            <h1 class="logo-wrapper">
+                <a class="brand-logo darken-1" href="index.html">
+            
+            <span class="logo-text hide-on-med-and-down">Opréau</span></a>
+
+                <a class="navbar-toggler" href="#"><i class="material-icons">radio_button_checked</i></a></h1>
+        </div>
+        <ul class="sidenav sidenav-collapsible leftside-navigation collapsible sidenav-fixed menu-shadow" id="slide-out" data-menu="menu-navigation" data-collapsible="menu-accordion">
+         
+            <li class="navigation-header"><a class="navigation-header-text">Applications</a><i class="navigation-header-icon material-icons">more_horiz</i>
+            </li>
+                <li class="bold"><a class="waves-effect waves-cyan " href="page-knowledge.html"><i class="material-icons">school</i><span class="menu-title" data-i18n="ToDo">SCHOOL 24</span></a>
+                </li>
+
+            <li class="bold "><a class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)"><i class="material-icons">book</i><span class="menu-title" >Médiathèque</span></a>
+
+
+                <div class="collapsible-body">
+                    <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+                        <li><a href="app-chat.html"><i class="material-icons">tchat</i><span data-i18n="Products Page">Forum</span></a>
+                        </li> 
+                        <li><a class=" collapsible-header waves-effect waves-cyan" href="#"><i class="material-icons">music_video</i><span data-i18n="Pricing">Livres</span></a>
+
+                            <div class="collapsible-body">
+                                <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+                                    <li><a  href="app-file-manager.html"><i class="material-icons">tchat</i><span data-i18n="Products Page">Livres Numériques</span></a>
+                                    </li>
+                                    <li><a href="#"><i class="material-icons">library_music</i><span>Livres audios</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            </li>
+            <li class="bold"><a class="waves-effect waves-cyan " href="app-todo.html"><i class="material-icons">voice_chat</i><span class="menu-title" data-i18n="ToDo">Vidéos</span></a>
+            </li>
+
+            <li class="bold active"><a class="waves-effect waves-cyan active" href="cours.html"><i class="material-icons">school</i><span class="menu-title" data-i18n="Kanban">Cours</span></a>
+            </li>
+
+            </li>
+            <li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)"><i class="material-icons">developer_mode</i><span class="menu-title" data-i18n="eCommerce">Labo</span></a>
+                <div class="collapsible-body">
+                    <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+                        <li><a href="app-kanban.html"><i class="material-icons">radio_button_unchecked</i><span>Quiz</span></a>
+                        </li>
+                        <li><a href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Pricing">Test de Niveau</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <div class="navigation-background"></div><a class="sidenav-trigger btn-sidenav-toggle btn-floating btn-medium waves-effect waves-light hide-on-large-only" href="#" data-target="slide-out"><i class="material-icons">menu</i></a>
+    </aside>
+
+    <!-- END: SideNav-->
+
+    <!-- BEGIN: Page Main-->
+    <div id="main">
+
+        <div class="container">
+
+
+
+<ul class="collapsible popout">
+   
+   <li class="active">
+    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Terminale D</div>
+   <div class="collapsible-body">
+
+    <div class="row">
+
+
+            <a href="#">
+                <div class="col s12 m3">
+                   <div class="card gradient-shadow gradient-45deg-light-blue-cyan border-radius-3 animate fadeUp">
+                      <div class="card-content center">
+                        <i class="large material-icons white-text">blur_on</i>
+                         <h5 class="white-text lighten-4">Physique Chimie</h5>
+                         <p class="white-text lighten-4">20</p>
+                      </div>
+                   </div>
+                </div>
+            </a>
+
+
+            <a href="#">
+                <div class="col s12 m3">
+                   <div class="card gradient-shadow gradient-45deg-red-pink border-radius-3 animate fadeUp">
+                      <div class="card-content center">
+                        <i class="large material-icons white-text">trending_up</i>
+                         <h5 class="white-text lighten-4">Mathématique</h5>
+                         <p class="white-text lighten-4">15</p>
+                      </div>
+                   </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="col s12 m3">
+                   <div class="card gradient-shadow gradient-45deg-amber-amber border-radius-3 animate fadeUp">
+                      <div class="card-content center">
+                        <i class="large material-icons white-text">translate</i>
+                         <h5 class="white-text lighten-4">Anglais</h5>
+                         <p class="white-text lighten-4">40</p>
+                      </div>
+                   </div>
+                </div>
+
+            </a>
+            
+            <a href="#">
+                <div class="col s12 m3">
+                   <div class="card gradient-shadow gradient-45deg-green-teal border-radius-3 animate fadeUp">
+                      <div class="card-content center">
+                        <i class="large material-icons white-text">pets</i>
+                         <h5 class="white-text lighten-4">SVT</h5>
+                         <p class="white-text lighten-4">Quiz</p>
+                      </div>
+                   </div>
+                </div>
+            </a>
+
+
+         </div>
+
+       
+   </div>
+   </li>   
+   <li>
+    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Troisième</div>
+   <div class="collapsible-body">
+
+    <div class="row">
+
+
+            <a href="#">
+                <div class="col s12 m3">
+                   <div class="card gradient-shadow gradient-45deg-light-blue-cyan border-radius-3 animate fadeUp">
+                      <div class="card-content center">
+                        <i class="large material-icons white-text">blur_on</i>
+                         <h5 class="white-text lighten-4">Physique Chimie</h5>
+                         <p class="white-text lighten-4">20</p>
+                      </div>
+                   </div>
+                </div>
+            </a>
+
+
+            <a href="#">
+                <div class="col s12 m3">
+                   <div class="card gradient-shadow gradient-45deg-red-pink border-radius-3 animate fadeUp">
+                      <div class="card-content center">
+                        <i class="large material-icons white-text">trending_up</i>
+                         <h5 class="white-text lighten-4">Mathématique</h5>
+                         <p class="white-text lighten-4">15</p>
+                      </div>
+                   </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="col s12 m3">
+                   <div class="card gradient-shadow gradient-45deg-amber-amber border-radius-3 animate fadeUp">
+                      <div class="card-content center">
+                        <i class="large material-icons white-text">translate</i>
+                         <h5 class="white-text lighten-4">Anglais</h5>
+                         <p class="white-text lighten-4">40</p>
+                      </div>
+                   </div>
+                </div>
+
+            </a>
+            
+            <a href="#">
+                <div class="col s12 m3">
+                   <div class="card gradient-shadow gradient-45deg-green-teal border-radius-3 animate fadeUp">
+                      <div class="card-content center">
+                        <i class="large material-icons white-text">pets</i>
+                         <h5 class="white-text lighten-4">SVT</h5>
+                         <p class="white-text lighten-4">Quiz</p>
+                      </div>
+                   </div>
+                </div>
+            </a>
+
+
+         </div>
+
+       
+   </div>
+   </li>   
+   <li>
+    <div class="collapsible-header"><i class="material-icons">filter_drama</i>CM2</div>
+   <div class="collapsible-body">
+
+    <div class="row">
+
+
+            <a href="#">
+                <div class="col s12 m3">
+                   <div class="card gradient-shadow gradient-45deg-light-blue-cyan border-radius-3 animate fadeUp">
+                      <div class="card-content center">
+                        <i class="large material-icons white-text">blur_on</i>
+                         <h5 class="white-text lighten-4">Lecture</h5>
+                         <p class="white-text lighten-4">20</p>
+                      </div>
+                   </div>
+                </div>
+            </a>
+
+
+            <a href="#">
+                <div class="col s12 m3">
+                   <div class="card gradient-shadow gradient-45deg-red-pink border-radius-3 animate fadeUp">
+                      <div class="card-content center">
+                        <i class="large material-icons white-text">trending_up</i>
+                         <h5 class="white-text lighten-4">Histoire</h5>
+                         <p class="white-text lighten-4">15</p>
+                      </div>
+                   </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="col s12 m3">
+                   <div class="card gradient-shadow gradient-45deg-amber-amber border-radius-3 animate fadeUp">
+                      <div class="card-content center">
+                        <i class="large material-icons white-text">translate</i>
+                         <h5 class="white-text lighten-4">Mathématique</h5>
+                         <p class="white-text lighten-4">40</p>
+                      </div>
+                   </div>
+                </div>
+
+            </a>
+            
+            <a href="#">
+                <div class="col s12 m3">
+                   <div class="card gradient-shadow gradient-45deg-green-teal border-radius-3 animate fadeUp">
+                      <div class="card-content center">
+                        <i class="large material-icons white-text">pets</i>
+                         <h5 class="white-text lighten-4">Géographie</h5>
+                         <p class="white-text lighten-4">05</p>
+                      </div>
+                   </div>
+                </div>
+            </a>
+
+
+         </div>
+
+       
+   </div>
+   </li>
+
+
+
+
+</ul>
+
+
+
+    </div>
+    <!-- END: Page Main-->
+
+    <!-- BEGIN: Footer-->
+
+
+    <!-- END: Footer-->
+
+    <!-- BEGIN VENDOR JS-->
+    <script src="../../../app-assets/js/vendors.min.js"></script>
+    <!-- BEGIN VENDOR JS-->
+    <!-- BEGIN PAGE VENDOR JS-->
+    <script src="../../../app-assets/vendors/jkanban/jkanban.min.js"></script>
+    <script src="../../../app-assets/vendors/quill/quill.min.js"></script>
+    <!-- END PAGE VENDOR JS-->
+    <!-- BEGIN THEME  JS-->
+    <script src="../../../app-assets/js/plugins.js"></script>
+    <script src="../../../app-assets/js/search.js"></script>
+    <script src="../../../app-assets/js/custom/custom-script.js"></script>
+    <!-- END THEME  JS-->
+    <!-- BEGIN PAGE LEVEL JS-->
+    <script src="../../../app-assets/js/scripts/app-kanban.js"></script>
+    <!-- END PAGE LEVEL JS-->
+
+<!-- ZOOM US -->
+    <script src="https://source.zoom.us/zoom-meeting-1.7.7.min.js"></script>
+    <script src="../../../app-assets/js/index-zoom.js"></script>
+</body>
+
+</html>
